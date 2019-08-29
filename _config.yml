@@ -40,9 +40,9 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/title_favicon_32.ico
-  medium: /images/title_favicon_64.ico
-  apple_touch_icon: /images/title_favicon_128.ico
+  small: /images/title_favicon_16.ico
+  medium: /images/title_favicon_32.ico
+  apple_touch_icon: /images/title_favicon_32.ico
   safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
@@ -228,11 +228,11 @@ avatar:
   # In theme directory (source/images): /images/avatar.gif
   # In site directory (source/uploads): /uploads/avatar.gif
   # You can also use other linking images.
-  url: #/images/avatar.gif
+  url: /images/avatar_128.ico
   # If true, the avatar would be dispalyed in circle.
-  rounded: false
+  rounded: true
   # If true, the avatar would be rotated with the cursor.
-  rotated: false
+  rotated: true
 
 # Table Of Contents in the Sidebar
 toc:
@@ -248,7 +248,7 @@ toc:
 
 sidebar:
   # Sidebar Position.
-  position: left
+  position: right
   #position: right
 
   # Manual define the sidebar width. If commented, will be default for:
@@ -418,7 +418,7 @@ safari_rainbow: false
 custom_scrollbar: false
 
 # Custom Logo (Do not support scheme Mist)
-custom_logo: /images/title_favicon_128.ico
+# custom_logo: 
 
 codeblock:
   # Code Highlight theme
