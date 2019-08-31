@@ -99,7 +99,7 @@ footer:
 creative_commons:
   license: by-nc-sa
   sidebar: false
-  post: false
+  post: true
   language:
 
 
@@ -116,7 +116,7 @@ disable_baidu_transformation: false
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post / page titles for better SEO-optimization.
-seo: false
+seo: true
 
 # If true, will add site-subtitle to index page.
 # Remember to set up your site-subtitle in Hexo `_config.yml` (e.g. subtitle: Subtitle)
@@ -127,7 +127,7 @@ exturl: false
 
 # Google Webmaster tools verification.
 # See: https://www.google.com/webmasters
-google_site_verification: iuqkPVY4lbLG3SA4ojF8EbFn9Yv4DStSgKrsuc4jYaI
+google_site_verification: 3dBwV8OlVnNtYzxCLCFp2w8WMpuSecV7vBmA_zrf9j4
 
 # Bing Webmaster tools verification.
 # See: https://www.bing.com/webmaster
@@ -139,7 +139,7 @@ yandex_site_verification:
 
 # Baidu Webmaster tools verification.
 # See: https://ziyuan.baidu.com/site
-baidu_site_verification: gxbDBizfFY
+baidu_site_verification: eoUZD1BDx6
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
 baidu_push: true
@@ -987,8 +987,8 @@ vendors:
   # mathjax: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
   # mhchem: //cdn.jsdelivr.net/npm/mathjax-mhchem@3
   # mhchem: //cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0
-  mathjax:
-  mhchem:
+  # mathjax:
+  # mhchem:
 
   # KaTeX
   # Example:
