@@ -424,7 +424,7 @@ codeblock:
   # Code Highlight theme
   # Available values: normal | night | night eighties | night blue | night bright
   # See: https://github.com/chriskempson/tomorrow-theme
-  highlight_theme: normal
+  highlight_theme: night eighties
   # Add copy button on codeblock
   copy_button:
     enable: false
@@ -494,7 +494,7 @@ font:
   global:
     external: true
     family: Lato
-    size:
+    size: 0.95
 
   # Font settings for site title (.site-title).
   title:
@@ -531,7 +531,6 @@ font:
 # Math Formulas Render Support
 math:
   enable: true
-
   # Default (true) will load mathjax / katex script on demand.
   # That is it only render those page which has `mathjax: true` in Front-matter.
   # If you set it to false, it will load mathjax / katex srcipt EVERY PAGE.
@@ -987,8 +986,8 @@ vendors:
   # mathjax: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
   # mhchem: //cdn.jsdelivr.net/npm/mathjax-mhchem@3
   # mhchem: //cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0
-  # mathjax:
-  # mhchem:
+  mathjax:
+  mhchem:
 
   # KaTeX
   # Example:
