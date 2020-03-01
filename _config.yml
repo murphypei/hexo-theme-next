@@ -494,7 +494,7 @@ font:
   global:
     external: true
     family: Lato
-    size: 0.95
+    size: 0.9
 
   # Font settings for site title (.site-title).
   title:
@@ -506,7 +506,6 @@ font:
   headings:
     external: true
     family:
-    size:
 
   # Font settings for posts (.post-body).
   posts:
