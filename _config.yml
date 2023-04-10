@@ -40,9 +40,9 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/title_favicon_16.ico
-  medium: /images/title_favicon_32.ico
-  apple_touch_icon: /images/title_favicon_32.ico
+  small: /images/angry_bird_16.ico
+  medium: /images/angry_bird_32.ico
+  apple_touch_icon: /images/angry_bird_32.ico
   safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
@@ -228,7 +228,7 @@ avatar:
   # In theme directory (source/images): /images/avatar.gif
   # In site directory (source/uploads): /uploads/avatar.gif
   # You can also use other linking images.
-  url: /images/avatar_128.ico
+  url: /images/angry_bird_128.ico
   # If true, the avatar would be dispalyed in circle.
   rounded: true
   # If true, the avatar would be rotated with the cursor.
