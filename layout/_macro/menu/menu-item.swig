@@ -16,7 +16,9 @@
       {%- set menuBadge = menu_badge.render(name) | trim %}
     {%- endif %}
 
-    {{ next_url(itemURL, menuIcon + menuText + menuBadge, {rel: 'section'}) }}
+    <a href="{{ url_for(itemURL) }}" rel="section">
+      {%- if theme.menu_settings.icons %}{{ menuIcon | safe }}{%- endif %}{{ menuText }}{%- if theme.menu_settings.badges %}{{ menuBadge | safe }}{%- endif %}
+    </a>
 
   </li>
 

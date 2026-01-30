@@ -241,12 +241,15 @@ NexT.utils = {
 
   registerSidebarTOC: function() {
     const navItems = document.querySelectorAll('.post-toc li');
+    if (navItems.length === 0) return; // 如果没有 TOC 项目，直接返回
     const sections = [...navItems].map(element => {
       var link = element.querySelector('a.nav-link');
+      if (!link) return null; // 如果没有链接，返回 null
       // TOC item animation navigate.
       link.addEventListener('click', event => {
         event.preventDefault();
         var target = document.getElementById(event.currentTarget.getAttribute('href').replace('#', ''));
+        if (!target) return; // 如果目标元素不存在，直接返回
         var offset = target.getBoundingClientRect().top + window.scrollY;
         window.anime({
           targets  : document.documentElement,
@@ -256,7 +259,7 @@ NexT.utils = {
         });
       });
       return document.getElementById(link.getAttribute('href').replace('#', ''));
-    });
+    }).filter(item => item !== null); // 过滤掉 null 值
 
     var tocElement = document.querySelector('.post-toc-wrap');
     function activateNavByIndex(target) {
@@ -298,6 +301,9 @@ NexT.utils = {
     }
 
     function createIntersectionObserver(marginTop) {
+      // 如果没有有效的 sections，直接返回
+      if (sections.length === 0) return;
+      
       marginTop = Math.floor(marginTop + 10000);
       let intersectionObserver = new IntersectionObserver((entries, observe) => {
         let scrollHeight = document.documentElement.scrollHeight + 100;
@@ -307,12 +313,18 @@ NexT.utils = {
           return;
         }
         let index = findIndex(entries);
-        activateNavByIndex(navItems[index]);
+        if (index >= 0 && index < navItems.length) {
+          activateNavByIndex(navItems[index]);
+        }
       }, {
         rootMargin: marginTop + 'px 0px -100% 0px',
         threshold : 0
       });
-      sections.forEach(item => intersectionObserver.observe(item));
+      sections.forEach(item => {
+        if (item) { // 确保 item 不为 null
+          intersectionObserver.observe(item);
+        }
+      });
     }
     createIntersectionObserver(document.documentElement.scrollHeight);
   },
